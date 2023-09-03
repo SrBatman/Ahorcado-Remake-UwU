@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahorcado</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+<body onload="word()">
+
+<div class="new-word">
+    <button type="button" onclick="reload()" >Nueva palabra</button>
+</div>
+
+<div class="word-container">
+    <div class="word-box">
+        <h2>
+            <span id="word"></span>
+        </h2>
+    </div>
+</div>
+
+<div class="container">
+    <section class="main-container">
+        <div class="ahorcado-img">
+            <img id="img" src="img/ahorcado-0.png" alt="Ahorcado IMG">
+        </div>
+    </section>
+
+    <section class="main-container" >
+        <div class="letters-box" >
+            <div class="letters" id="buttons-container">
+                <script>
+                const letters = 'abcdefghijklmnopqrstuvwxyz';
+                const buttonsContainer = document.getElementById('buttons-container');
+        for (const uwu of letters) {
+            
+            const button = document.createElement('button');
+            button.id = uwu;
+            button.className = 'enable';
+            button.type = 'button';
+            button.onclick = () => letter(uwu);
+            button.textContent = uwu.toUpperCase();
+            buttonsContainer.appendChild(button);
+            }
+                </script>
+
+   
+            </div>
+        </div>
+
+        <div class="game-brand">
+            <span>By SSG</span>
+            <!-- <img src="./img/Gabox.svg" alt="Logo Gabox"> -->
+        </div>
+
+    </section>
+</div>
+
+<div class="notify hidde" id="win">
+
+    <div class="topic">
+        <span>¡Has ganado!</span>
+        <img src="./img/Smile.png" alt="Carita feliz">
+    </div>
+
+    <div class="question">
+        <span>
+            ¿Volver a jugar?
+        </span>
+        <div class="question-buttons">
+            <button onclick="reload()">¡Claro que si!</button>
+            <button onclick="win_hidde()">Quizás más tarde</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="notify hidde" id="defeat">
+
+    <div class="topic">
+        <span>¡Has perdido!</span>
+        <img src="./img/Sad.png" alt="Carita triste">
+    </div>
+
+    <div class="question">
+        <span>
+            ¿Volver a intentarlo?
+        </span>
+        <div class="question-buttons">
+            <button onclick="reload()">¡Claro que si!</button>
+            <button onclick="defeat_hidde()">Quizás más tarde</button>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/ahorcado.js">
+</script>
+
+</body>
+</html>

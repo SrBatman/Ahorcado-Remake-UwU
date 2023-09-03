@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Margarine', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #363940;
+}
+
+header{
+    background: #262626;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+header .title-box{
+    width: 100%;
+    position: fixed;
+}
+
+.title{
+    text-align: center;
+}
+
+header h1{
+    color: papayawhip;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Index */
+
+main{
+    display: flex;
+}
+
+section{
+    width: 50vw;
+}
+
+.section-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container{
+    margin-top: 25vh;
+    width: 80%;
+}
+
+.title{
+    font-size: 6rem;
+    color: #ebebec;
+}
+
+.button{
+    background-color: #2d2d2d;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button span{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.button-container{
+    margin-top: 3vh;
+}
+
+.brand{
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.brand span{
+    font-size: 4.3rem;
+    color: white;
+}
+
+.brand img{
+    width: 150px;
+    margin-left: 0.5vw;
+}
+
+.sec-brand{
+    display: none;
+}
+
+@media(max-width: 1366px){
+    .brand{
+        margin-top: 15vh;
+    }
+
+    .section-right img{
+        width: 600px;
+    }
+}
+
+@media(min-width: 1280px){
+    .brand{
+        margin-top: 15vh;
+    }
+
+    body{
+        max-height: 100vh;
+    }
+}
+
+@media(max-width: 1024px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        width: 100vw;
+        height: auto;
+    }
+    .section-right img{
+        width: 500px;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    .title-container{
+        margin-top: 3vh;
+    }
+
+    .sec-brand{
+        width: 100vw;
+        margin-top: 5vh;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec-brand span{
+        font-size: 4.3rem;
+        color: white;
+    }
+
+    .sec-brand img{
+        width: 150px;
+        margin-left: 0.5vw;
+    }
+}
+
+@media(max-width: 912px){
+    .section-right img{
+        width: 700px;
+    }
+}
+
+@media(max-width: 768px){
+    section{
+        height: auto;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    .title-container{
+        margin-top: 3vh;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+
+    .section-right img{
+        width: 500px;
+    }
+
+    .sec-brand{
+        width: 100vw;
+        margin-top: 5vh;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec-brand span{
+        font-size: 4.3rem;
+        color: white;
+    }
+
+    .sec-brand img{
+        width: 150px;
+        margin-left: 0.5vw;
+    }
+}
+
+@media(max-width: 540px){
+    .section-right img{
+        width: 350px;
+    }
+}
+
+@media(max-width: 425px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        width: 100vw;
+        height: auto;
+    }
+
+    .section-right img{
+        width: 100%;
+    }
+
+    .title-container{
+
+        margin-top: 5vh;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 375px){
+    .section-right img{
+        width: 335px;
+    }
+
+    .title{
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 320px){
+
+    .section-right img{
+        width: 280px;
+    }
+
+    .title-container{
+        width: 85%;
+    }
+    .title{
+        font-size: 3rem;
+    }
+
+    .sec-brand{
+        margin-top: 3.5vh;
+    }
+
+    .sec-brand img{
+        width: 100px;
+    }
+
+    .sec-brand span{
+        font-size: 3.3rem;
+    }
+
+}
+
