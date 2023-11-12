@@ -17,7 +17,7 @@ function clear(){
 }
 
 function word(){
-    const words = ["jabón"]
+    const words = ["jabón", "shampoo"]
     //
 
     clear()
